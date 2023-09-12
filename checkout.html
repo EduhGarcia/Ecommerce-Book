@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="shortcut icon" href="./assets/img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/globais.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/checkout.css">
+    <link rel="stylesheet" href="./src/css/style-card-carrinho.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img class="logo-checkout" src="./assets/img/ecommerce-logo.png" alt="Logo do ecommerce book">
+        </a>
+    </header>
+
+    <form class="form-checkout">
+        <section id="dados-usuario" class="secao-checkout">
+            <p class="titulo-secao">Seus dados</p>
+            <div class="div-padrao-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Carlos Silva">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+
+            <div class="div-padrao-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Carlos.silva@gmail.com">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+
+            <div class="div-padrao-form">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(48) 999999999">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+        </section>
+
+        <section id="dados-pagamento" class="secao-checkout">
+            <p class="titulo-secao">Pagamento e Entrega</p>
+
+            <div class="div-padrao-form">
+                <label for="Numero-do-cartao">Número do cartão</label>
+                <input type="text" id="Numero-do-cartao" placeholder="1111 1111 1111 1111">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+
+            <div class="info-curtas">
+                <div class="div-padrao-form">
+                    <label for="data-validade">Data de validade</label>
+                    <input type="text" id="data-validade" placeholder="12 / 27">
+                    <p class="campo-obrigatorio">* Campo obrigatório</p>
+                </div>
+
+                <div class="div-padrao-form">
+                    <label for="Cvv">CVV</label>
+                    <input type="number" id="Cvv" placeholder="111">
+                    <p class="campo-obrigatorio">* Campo obrigatório</p>
+                </div>
+            </div>
+
+            <div class="div-padrao-form">
+                <label for="cep">CEP</label>
+                <input type="number" id="cep" placeholder="11111-222">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+
+            <div class="div-padrao-form">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Rua José da Luz">
+                <p class="campo-obrigatorio">* Campo obrigatório</p>
+            </div>
+
+            <div class="info-curtas">
+                <div class="div-padrao-form">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" placeholder="222">
+                    <p class="campo-obrigatorio">* Campo obrigatório</p>
+                </div>
+
+                <div class="div-padrao-form">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" placeholder="Casa cinza">
+                    <p class="campo-obrigatorio">* Campo obrigatório</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos-checkout" class="secao-checkout">
+            <p class="titulo-secao">Produtos</p>
+
+            <section id="container-produtos-checkout" class="container-produtos-checkout"></section>
+
+            <section id="celula-checkout" class="celula-checkout">
+                <p id="preco-total" class="preco-total">Preço total: $0.00</p>
+                <button class="btn-finalizar-compra" type="submit">Finalizar compra</button>
+            </section>
+        </section>
+    </form>
+
+    <script type="module" src="./src/scripts/checkout.js"></script>
+</body>
+
+</html>

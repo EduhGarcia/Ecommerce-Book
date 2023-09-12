@@ -1,0 +1,130 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.header a{
+    height: 85px;
+    margin-left: 35px;
+}
+
+.logo-checkout {
+    height: 100%; 
+}
+
+.header {
+    position: relative;
+}
+
+.form-checkout {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: 86.4%;
+    padding: 40px 20px;
+}
+
+.form-checkout .secao-checkout {
+    width: 33%;
+    padding: 20px 0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.form-checkout .secao-checkout .titulo-secao{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-checkout .secao-checkout .div-padrao-form{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 40px;
+}
+
+.form-checkout .secao-checkout div label{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-checkout .secao-checkout div input{
+    border-radius: 2px;
+    border: solid 2px var(--branco);
+    padding: 4px 8px;
+}
+
+.form-checkout .secao-checkout div input::placeholder {
+    color: var(--branco);
+}
+
+.form-checkout .secao-checkout div input:focus{
+    outline: 0;
+    border: solid 2px rgb(32,178,170);
+}
+
+.info-curtas{
+    display: flex; 
+}
+
+.info-curtas .div-padrao-form{
+    width: 50%;  
+}
+
+.container-produtos-checkout {
+    height: 75%;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.card-carrinho{
+   margin-bottom: 10px;
+}
+
+.card-carrinho .quantidade-produto-carrinho {
+    position: absolute;
+    font-size: 14px;
+    bottom: 5px;
+    right: 9px;
+}
+
+.secao-checkout .celula-checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.secao-checkout .celula-checkout p{
+    background-color: var(--branco);
+    border-radius: 8px;
+    color: rgb(21 128 61);
+    padding: 6px 0 6px 20px;
+}
+
+.secao-checkout .celula-checkout button{
+    background-color: rgb(15 23 42);
+    color: var(--branco);
+    padding: 12px;
+}
+
+.secao-checkout .celula-checkout button:hover{
+    background-color: rgb(30 41 59);
+}
+
+.campo-obrigatorio {
+    display: none;
+    font-size: 12px;
+    margin-top: 8px;
+    color: red;
+}
+
+.habilitado {
+    display: block;
+}

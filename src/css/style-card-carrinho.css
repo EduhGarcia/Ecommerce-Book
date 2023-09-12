@@ -1,0 +1,36 @@
+.card-carrinho img {
+    height: 100px;
+    border-radius: 8px;
+}
+
+.card-carrinho {
+    display: flex;
+    position: relative;
+    background-color: var(--branco);
+    border-radius: 8px;
+}
+
+.caracteristicas-produto-carrinho {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caracteristicas-produto-carrinho p:nth-child(1) {
+    color: rgb(2 6 23);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.caracteristicas-produto-carrinho p:nth-child(2) {
+    color: rgb(148 163 184);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.caracteristicas-produto-carrinho p:nth-child(3) {
+    color: rgb(21 128 61);
+    font-size: 18px;
+    line-height: 28px;
+}

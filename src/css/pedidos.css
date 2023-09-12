@@ -1,0 +1,42 @@
+.header a{
+    height: 85px;
+    margin-left: 35px;
+}
+
+.logo-checkout {
+    height: 100%; 
+}
+
+.header {
+    position: relative;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-pedido {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-carrinho {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.card-carrinho .quantidade-produto-carrinho {
+    position: absolute;
+    bottom: 4px;
+    right: 9px;
+    font-size: 13px;
+}
+
+.container-pedidos {
+    background-color: rgb(203 213 225);
+    padding: 12px;
+    border-radius: 10px;
+}

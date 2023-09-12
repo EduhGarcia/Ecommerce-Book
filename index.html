@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoomerce Books</title>
+
+    <link rel="shortcut icon" href="./assets/img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/globais.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/carrinho.css">
+    <link rel="stylesheet" href="./src/css/style-card-carrinho.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="carrinho" class="carrinho carrinho-fechado">
+
+        <div id="cabecalho-carrinho">
+            <p>Meu carrinho</p>
+            <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+
+        <section id="produtos-carrinho"></section>
+
+        <p id="preco-total" class="preco-total">Preço total: $0.00</p>
+        <button class="btn-finalizar-compra" id="finalizar-pedido">Finalizar compra</button>
+    </section>
+
+    <header class="header">
+        <a href="/">
+            <img class="logo" src="./assets/img/ecommerce-logo.png" alt="Logo do ecommerce book">
+        </a>
+
+        <div class="buttons-header">
+            <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+            <a href="/pedidos.html">
+                <button><i class="fa-solid fa-user"></i></button>
+            </a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <section id="filtros" class="filtros">
+            <div class="filtro">
+                <input id="exibir-todos" name="tipo-capa" type="radio" checked>
+                <label for="exibir-todos">Todos</label>
+            </div>
+
+            <div class="filtro">
+                <input id="exibir-capa-dura" name="tipo-capa" type="radio">
+                <label for="exibir-capa-dura">Capa Dura</label>
+            </div>
+
+            <div class="filtro">
+                <input id="exibir-capa-comum" name="tipo-capa" type="radio">
+                <label for="exibir-capa-comum">Capa Comum</label>
+            </div>
+        </section>
+
+        <section id="container-products" class="container-products"></section>
+    </main>
+
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>

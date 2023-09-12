@@ -1,0 +1,73 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 30px 20px 30px;
+    padding: 40px;
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.card-product {
+    box-shadow: 5px 5px 10px 15px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    margin: 10px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.card-product button {
+    background-color: rgb(2 6 23);
+}
+
+.card-product img {
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.card-product:hover img {
+    transform: scale(106%);
+}
+
+.btn-adicionar-ao-carrinho:hover {
+    background-color: rgb(51 65 85);
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+}
+
+.filtros label, .filtros input {
+    cursor: pointer;
+    user-select: none;
+}
+
+.filtros input {
+    display: none;
+}
+
+.filtros input:checked + label {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 9px;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+.esconder-produto {
+    display: none;
+}
