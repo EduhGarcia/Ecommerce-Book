@@ -14,14 +14,14 @@ function desenharProdutoCheckout() {
 function retirarLabelCampoVazio() {
     const inputs = document.querySelectorAll("input")
     const campoObrigatorio = document.querySelectorAll('.campo-obrigatorio')
-    console.log('riasia')
+
     inputs.forEach((element, index) => {
         element.addEventListener('change', () => {
             if (element.value !== '') {
                 campoObrigatorio[index].classList.remove('habilitado')
             }
         })
-        
+
     })
 }
 
@@ -30,7 +30,9 @@ function indetificarCamposObrigatorios() {
     const campoObrigatorio = document.querySelectorAll('.campo-obrigatorio')
 
     inputs.forEach((element, index) => {
-        if (element.value === "") {
+        if (index === 9) {
+            count += 0
+        } else if (element.value === "") {
             campoObrigatorio[index].classList.add('habilitado')
             count = 0
         } else {
@@ -42,10 +44,12 @@ function indetificarCamposObrigatorios() {
 function finalizarCompra(evento) {
     evento.preventDefault()
     const idsProdutosCarrinhosComQuantidade = lerLocalStorage('carrinho') ?? {}
-
+    
     indetificarCamposObrigatorios()
 
-    if (Object.keys(idsProdutosCarrinhosComQuantidade).length !== 0 && count === 10) {
+    console.log(count)
+
+    if (Object.keys(idsProdutosCarrinhosComQuantidade).length !== 0 && count === 9) {
         const dataAtual = new Date()
         const pedidoFeito = {
             dataPedido: dataAtual,
