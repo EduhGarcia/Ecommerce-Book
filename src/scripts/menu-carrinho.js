@@ -12,7 +12,8 @@ function desenharProdutoNoCarrinho(idProduto) {
 
     atualizarPrecoCarrinho()
 
-    const cartaoProdutoCarrrinho = `<button id="remover-item-${produto.id}" class="excluir-card"><i class="fa-solid fa-circle-xmark"></i></button>
+    elementoArticle.innerHTML = `
+    <button id="remover-item-${produto.id}" class="excluir-card"><i class="fa-solid fa-circle-xmark"></i></button>
         
     <img src="./assets/img/${produto.imagem}" alt="carrinho: ${produto.nome}">
         
@@ -28,7 +29,7 @@ function desenharProdutoNoCarrinho(idProduto) {
         <button id="incrementar-produto-${produto.id}">+</button>
     </div>
     `
-    elementoArticle.innerHTML = cartaoProdutoCarrrinho
+    
     containerProdutoCarrinho.appendChild(elementoArticle)
 
     document.getElementById(`decrementar-produto-${produto.id}`)
