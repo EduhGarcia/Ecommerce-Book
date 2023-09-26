@@ -60,7 +60,7 @@ function finalizarCompra(evento) {
         salvarLocalStorage('historico', historicoDePedidosAtualizado)
 
         exluirDoLocalStorage('carrinho')
-        window.location.href = window.location.origin + '/pedidos.html'
+        window.location.href = window.location.origin + './pedidos.html'
     }
 }
 
