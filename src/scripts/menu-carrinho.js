@@ -54,7 +54,7 @@ function fecharCarrinho() {
 
 function irParaCheckout() {
     if(Object.keys(idsProdutosCarrinhosComQuantidade).length !== 0) {
-        window.location.href = window.location.origin + './checkout.html'
+        window.location.href += './checkout.html'
     }
 }
 
